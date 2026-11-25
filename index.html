@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Regie C. Espalabra | Web Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Regie C. Espalabra, a student developer building web and mobile apps with PHP, MySQL, JavaScript, and Flutter.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.dataset.theme = localStorage.getItem('theme') || 'dark';</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="logo" href="#top"><span class="dot" aria-hidden="true"></span>Regie</a>
+    <nav id="nav" aria-label="Main">
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button id="theme-toggle" class="icon-btn" aria-label="Switch theme" type="button"><span aria-hidden="true" id="theme-icon">☀</span></button>
+      <button id="menu-toggle" class="icon-btn menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav" type="button"><span aria-hidden="true">☰</span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-text">
+        <p class="hero-im">I'm</p>
+        <h1>Regie C. Espalabra</h1>
+        <p class="role">Web &amp; Mobile Developer</p>
+        <p class="hero-sub">I build practical apps with PHP, MySQL, JavaScript, and Flutter. My goal is a junior full-stack role where I can ship useful tools and contribute to open source.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#projects">View my work</a>
+          <a class="social" href="https://github.com/RegieEspalabra" target="_blank" rel="noopener" aria-label="GitHub profile">GH</a>
+          <a class="social" href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener" aria-label="LinkedIn profile">in</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="photo-ring"><span class="initials" aria-hidden="true">RE</span>
+          <img src="assests/image1.jfif" alt="Portrait of Regie C. Espalabra" width="360" height="360" onerror="this.style.display='none'">
+        </div>
+      </div>
+    </section>
+
+    <section class="strip-wrap" aria-label="Core technologies">
+      <ul class="strip"><li>PHP</li><li>MySQL</li><li>JavaScript</li><li>Flutter</li><li>Git</li></ul>
+    </section>
+
+    <section id="about">
+      <h2>About me</h2>
+      <p>I'm an information technology student who learns by building. My projects cover a full cycle: designing the database, writing the PHP back end, and shaping a front end people can use.</p>
+      <p>Right now I'm focused on clean, responsive interfaces and on working in the open with Git and GitHub.</p>
+    </section>
+
+    <section id="skills">
+      <h2>What can I do for your needs</h2>
+      <div class="skills">
+        <article class="skill-group">
+          <h3>Front-end development</h3>
+          <p>Responsive pages with semantic HTML5, CSS3, and vanilla JavaScript.</p>
+          <ul class="chips"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+        </article>
+        <article class="skill-group">
+          <h3>Back-end and databases</h3>
+          <p>PHP APIs with PDO and MySQL schemas that fit the data.</p>
+          <ul class="chips"><li>PHP</li><li>MySQL</li><li>SQL</li></ul>
+        </article>
+        <article class="skill-group">
+          <h3>Mobile and cross-platform</h3>
+          <p>Apps for web and mobile from one Flutter codebase.</p>
+          <ul class="chips"><li>Flutter</li><li>Dart</li></ul>
+        </article>
+        <article class="skill-group">
+          <h3>Tools</h3>
+          <p>Version control and local dev environments.</p>
+          <ul class="chips"><li>Git</li><li>GitHub</li><li>XAMPP</li><li>VS Code</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Featured projects</h2>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="filter active" data-filter="all" type="button">All</button>
+        <button class="filter" data-filter="flutter" type="button">Flutter</button>
+        <button class="filter" data-filter="php" type="button">PHP</button>
+        <button class="filter" data-filter="web" type="button">Web</button>
+      </div>
+      <div class="cards">
+        <!-- TODO: update the description and tags to match what each repo really contains -->
+        <article class="card" data-tags="web">
+          <div class="shot"><img src="assests/project1.png" alt="Screenshot of Regie Final Project" loading="lazy" onerror="this.style.display='none'"></div>
+          <h3>Final Project</h3>
+          <p>My final course project. Replace this line with one or two sentences on what it does and what you built.</p>
+          <ul class="chips"><li>Add</li><li>Tech</li><li>Tags</li></ul>
+          <div class="links"><a href="https://github.com/RegieEspalabra/RegieFinalProject" target="_blank" rel="noopener">Source code</a><a href="https://regiefinalproject.netlify.app/" target="_blank" rel="noopener">Live demo</a></div>
+        </article>
+        <article class="card" data-tags="web">
+          <div class="shot"><img src="assests/project2.png" alt="Screenshot of Regie Weather" loading="lazy" onerror="this.style.display='none'"></div>
+          <h3>Regie Weather</h3>
+          <p>A weather app. Replace this line with what it shows and which data source or API it uses.</p>
+          <ul class="chips"><li>Add</li><li>Tech</li><li>Tags</li></ul>
+          <div class="links"><a href="https://github.com/RegieEspalabra/Regie-Weather" target="_blank" rel="noopener">Source code</a><a href="https://regieweather.netlify.app/" target="_blank" rel="noopener">Live demo</a></div>
+        </article>
+        <article class="card" data-tags="flutter php">
+          <div class="shot"><img src="assests/project3.png" alt="Screenshot of Wvsu Mission, Vision" loading="lazy" onerror="this.style.display='none'"></div>
+          <h3>Wvsu Mission, Vision</h3>
+          <p>Wvsu Mission, Vision</p>
+          <ul class="chips"><li>Flutter Web</li><li>PHP</li><li>MySQL</li></ul>
+          <div class="links"><a href="https://github.com/RegieEspalabra" target="_blank" rel="noopener">Source code</a><a href="https://legendary-starlight-a7fa92.netlify.app/" target="_blank" rel="noopener">Live demo</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="showcase">
+      <h2>Open source and capstone</h2>
+      <article class="showcase">
+        <h3>CIT 240 capstone: this portfolio</h3>
+        <p>Built with semantic HTML5, a mobile-first CSS layout, and vanilla JavaScript, then deployed on GitHub Pages from a public repository.</p>
+        <p>Add your open source contributions here: issues you opened, pull requests you sent, or projects you forked and improved.</p>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Let's work together</h2>
+      <p>Open to internships and junior developer roles. Email is the fastest way to reach me.</p>
+      <p class="emails"><a class="btn primary" href="mailto:regiecespalabra@gmail.com">regiecespalabra@gmail.com</a> <a class="btn" href="mailto:regie.espalabra@wvsu.edu.ph">regie.espalabra@wvsu.edu.ph</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> Regie C. Espalabra. All rights reserved.</p>
+    <p><a href="https://github.com/RegieEspalabra" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
